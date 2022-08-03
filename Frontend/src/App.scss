@@ -1,0 +1,151 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app-container{
+    height: 118vh;
+    background-color: #F2F7FF;
+    position: relative;
+}
+
+/* sidebar component */
+.main-container {
+    display: flex;
+  }
+
+.sidebar
+{
+    position: fixed;
+    margin-top: 0.4rem;
+    background-color: #fff;
+    color: rgb(0, 0, 0);
+    /* height: 99vh; */
+    height: 101vh;
+    width: 32vh;
+    z-index: 20;
+    margin-top: 3rem;
+}
+
+.rub-search-component {
+    border-bottom: 1px solid #015BDF;
+    margin-top: 2.5rem;
+    width: 13.9rem;
+    margin-left: 0.5rem;
+    // margin-bottom: 1rem;
+
+    .ant-input-group-addon {
+        display:none;
+        
+    }
+    .ant-input-group {
+        font-size: 1.4rem;
+    }
+    .ant-input-affix-wrapper {
+        border-radius: 0;
+        font-size: 1.4rem;
+        border:0;
+        padding: 0.1rem;
+
+        input {
+            &::placeholder {
+                color: #015BDF;
+                font-size: 16px;
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+
+.link
+{
+    margin-top: 1rem;
+    display: flex;
+    color: rgb(36, 35, 35);
+    gap: 0.9rem;
+    text-decoration: none;
+    padding: 0.4rem 1rem;
+    font-size: 1rem;
+}
+
+.link:hover
+{
+    color: #1890ff;
+    background: #F2F7FF;
+}
+
+
+.active
+{
+    border-right: 2px solid #1890ff;
+    color: #1890ff;
+    background: #F2F7FF;
+}
+
+.footer
+{
+    text-align: center;
+    margin-top: 7.5rem;
+    color: #1890ff;
+    font-weight: 370;
+    font-size: 1rem;
+}
+
+main
+{
+    padding: 1rem;
+}
+
+
+.font-icon
+{
+    color: grey;
+}
+
+
+
+/* Navbar component */
+.nav-container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0067ff;
+    color: white;
+    height: 3.9rem;
+    width: 99vw;
+    position: fixed;
+    z-index: 100;
+}
+
+.nav-left
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 1.2rem;
+}
+.nav-left h2
+{
+    color: white;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+}
+
+.nav-right
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
+    gap: 1.6rem;
+}
+
+.nav-right > *
+{
+    cursor: pointer;
+}
